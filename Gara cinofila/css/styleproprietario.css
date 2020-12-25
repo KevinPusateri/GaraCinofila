@@ -1,0 +1,398 @@
+html,body{
+	height:100%;
+}
+body{
+	
+	background: #eee;
+}
+
+/*-----------------------------
+generale
+-----------------------------*/
+
+.animate{
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.buttonl{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	border-radius:20px;
+}
+
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+p{
+	line-height: 22px
+}
+a{
+	color:#16dd94;
+	
+}
+
+
+
+.main {
+  height: 90%; /* Used in this example to enable scrolling */
+}
+
+/*-----------------------------
+header
+-----------------------------*/
+
+.header{
+  /*overflow: hidden;*/
+  width:100%;
+  background-color: MediumSeaGreen;
+  position: fixed;
+  top: 0;
+  z-index:2;
+  opacity:0.8;
+}
+
+
+
+.header__logo{
+	float:left;
+	display: block;
+	padding:15px;/*10*/
+	height:90px;/*9%*/
+	
+
+}
+.header__menu{
+	float:right;
+	margin:0;
+	padding:0 25px;/*5px*/
+}
+.header__menu__item{
+	margin-top: 10px;/*non cera*/
+	display: inline-block;
+}
+.header__menu__item a{
+	width: 165px;/*no*/
+	color: white;
+	display: block;
+	padding:20px;/*10*/
+	text-decoration: none;
+	/*margin:20px;*/
+	font-size:20px;
+/**/font-family:Century Gothix;
+	font-weight: bold;
+	text-align: center;/**/
+}
+.header__menu__item a:hover{
+	background-color: #228B22;	
+}
+.header__icon-bar{
+	display: block;
+	float: right;
+	padding: 25px;/*20*/
+	display: none;
+}
+.header__icon-bar span{
+	display: block;
+	height:3px; 
+	width: 30px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+
+a:hover{
+	background:#589774;
+	
+}
+header__menu ul{
+	background:MediumSeaGreen;
+	
+}
+.dropbtn {
+    background-color: MediumSeaGreen;
+    color: white;
+    padding: 16px;
+	font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width:165px;
+	font-family:Century Gothix;
+	font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	text-decoration:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 165px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*-----------------------------
+Cover
+-----------------------------*/
+.cover{
+	height:80%;
+	background-image: url("../images/s.jpg");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+	position:relative;
+}
+.cover__filter{ 
+	background: #000; 
+	width:100%; 
+	height:100%; 
+	position: absolute; 
+	z-index: 0; 
+	opacity: 0.5; 
+	}
+.cover__caption{ 
+	display: table; 
+	height: 100%; 
+	width:100%; 
+	position: relative; 
+	z-index:1; 
+	padding: 0 20px;
+}
+.cover__caption__copy{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+	color:#fff;
+	z-index:0;
+}
+
+.cover--single{
+	height: 50%;
+}
+.cover--single h1{
+	font-size: 42px;
+}
+
+/*-----------------------------
+Cards
+-----------------------------*/
+
+.cards{
+	max-width: 1200px;
+	margin: 40px auto;
+	}
+.card{
+	width: 30%; 
+	margin:0 1.5%; 
+	background: #fff;
+	float:left;
+}
+.card__image{
+	width:100%; 
+	height: auto;
+	}
+.card__copy{
+	padding:5px 20px;
+	}
+.card__copy h3{
+	margin-bottom:0;
+	}
+
+
+
+/*-----------------------------
+Banner
+-----------------------------*/
+.banner{
+	background: #fff;
+	height:50%;
+	margin-top:40px;
+}
+.banner__image{
+	width:30%;
+	float:left;
+	height:100%;
+	background-image: url("../images/cd.jpg");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+}
+.banner__copy{
+	width:70%;
+	float:left;
+	height:100%;
+	display: table;
+}
+.banner__copy__text{
+	display: table-cell;
+	vertical-align: middle;
+	padding:30px;
+}
+
+.banner__copy__text h3{
+	font-size: 36px;
+	margin-bottom:0;
+}
+.banner__copy__text h4{
+	font-size: 22px;
+	margin: 5px 0;
+}
+
+
+/*-----------------------------
+Footer
+-----------------------------*/
+
+.footer{
+	background: #333;
+	padding:30px;
+	color:#fff;
+	margin-top: 40px;
+}
+
+
+/*-----------------------------
+Single
+-----------------------------*/
+.panel{}
+.panel__copy{
+	max-width: 800px;
+	margin: 0px auto; 
+	margin-top: -60px; 
+	background: #fff; 
+	padding:20px 40px;
+	position: relative; 
+	z-index: 1;
+}
+.panel__copy__meta{
+	font-weight: bold;
+	font-size: 16px;
+}
+.panel__copy__title{
+	font-size: 32px;
+}
+
+
+
+
+/*-----------------------------
+Smartphone
+-----------------------------*/
+@media (max-width: 667px){
+
+	.header{
+		position:fixed;
+		z-index: 100;
+		width:100%;
+		
+	}
+	.header__icon-bar{
+		display: block;
+	}
+	.header__logo{
+		float:left;
+		display: block;
+	
+	
+	}	
+	
+
+	.header__menu{
+		width:100%;
+		height:0px;
+		overflow: hidden;
+	}
+	.header__menu__item{
+		display: block;
+	}
+	
+	.is-open{
+		height:300px; 
+		overflow: auto;
+	}
+
+	/* Cover */
+	.cover{
+		height:100%;
+	}
+
+	/* Cards */
+	.card{
+		width: 90%; 
+		margin:5%;
+	}
+
+	/* Banner */
+	.banner{
+		height: 600px;
+	}
+	.banner__image,
+	.banner__copy{
+		width:100%;
+		height:50%;
+	}
+
+}
+
+
+/* clearfix */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

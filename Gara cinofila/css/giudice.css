@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url("../images/login.jpg");
+	font-family: sans-serif;
+	background-size: 100% 100%;
+}
+.header__logo2{
+	
+	display: block;
+	padding:10px;
+	height:9%;
+	
+
+}
+
+
+
+
+input[type="text"]{
+	border: none;
+	outline: none;
+	height: 22px;
+	color: #262626;
+	background: transparent;
+	font-size: 16px;
+	padding-left: 0px;
+	box-sizing: border-box;
+	
+}
